@@ -3,7 +3,7 @@ Color Changer Skill for Echo Buttons in ASK Python SDK (using Decorators)
 
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
-**Important: The Gadgets Skill API is in beta and is subject to change at any time without notice. We welcome your feedback.**
+**Important: The Echo Buttons Skill API is in beta and is subject to change at any time without notice. We welcome your feedback.**
 
 These instructions show how to create a skill called Color Changer, which demonstrates the core functionality of an [Echo Button](https://www.amazon.com/Echo-Buttons-Alexa-Gadget-Pack/dp/B072C4KCQH) skill. It covers [roll call](https://developer.amazon.com/docs/gadget-skills/discover-echo-buttons.html#goals), starting and stopping the [Input Handler](https://developer.amazon.com/docs/gadget-skills/receive-echo-button-events.html#flow), and [defining animations](https://developer.amazon.com/docs/gadget-skills/control-echo-buttons.html#animate) for different button events. It also demonstrates how Echo Buttons can interrupt text-to-speech (TTS). These direction assume you have some familiarity with
 Python (or a similar programming language) and the Alexa Skills Kit.
@@ -43,7 +43,7 @@ Additional Resources
 -  [Official Alexa Skills Kit Python SDK](https://pypi.org/project/ask-sdk/)
 -  [Official Alexa Skills Kit Python SDK Docs](https://alexa-skills-kit-python-sdk.readthedocs.io/en/latest/)
 -  [Official Alexa Skills Kit Docs](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html)
-- [Official Alexa Gadgets Documentation](https://developer.amazon.com/alexa/alexa-gadgets) - The Echo Buttons are the first Alexa Gadget
+-  [Official Echo Buttons Skill API Documentation](https://developer.amazon.com/alexa/alexa-gadgets/echo-buttons-skill-api) - The Echo Buttons were the first Alexa Gadget
 
 <p align="center">
   <br/>

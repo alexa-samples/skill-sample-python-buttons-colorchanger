@@ -81,7 +81,7 @@ def help_response(handler_input):
 
     if "current_input_handler_id" in session_attributes:
         # if there is an active input handler, stop it so it doesn't interrup Alexa speaking the Help prompt
-        # see: https://developer.amazon.com/docs/gadget-skills/receive-echo-button-events.html#stop
+        # see: https://developer.amazon.com/docs/echo-button-skills/receive-echo-button-events.html#stop
         ctx["directives"].append(
             StopInputHandlerDirective(
                 originating_request_id=session_attributes["current_input_handler_id"]
@@ -327,13 +327,13 @@ def response_interceptor(handler_input, response):
     if "open_microphone" in ctx:
         if ctx["open_microphone"]:
             # setting shouldEndSession = fase  -  lets Alexa know that we want an answer from the user
-            # see: https://developer.amazon.com/docs/gadget-skills/receive-voice-input.html#open
-            # https://developer.amazon.com/docs/gadget-skills/keep-session-open.html
+            # see: https://developer.amazon.com/docs/echo-button-skills/receive-voice-input.html#open
+            # https://developer.amazon.com/docs/echo-button-skills/keep-session-open.html
             response_builder.set_should_end_session(False)
         else:
             # deleting shouldEndSession will keep the skill session going,
             # while the input handler is active, waiting for button presses
-            # see: https://developer.amazon.com/docs/gadget-skills/keep-session-open.html
+            # see: https://developer.amazon.com/docs/echo-button-skills/keep-session-open.html
             response_builder.set_should_end_session(None)
 
     logger.info("Adding " + str(len(ctx["directives"])) + " directives")
