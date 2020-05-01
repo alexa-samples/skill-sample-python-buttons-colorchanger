@@ -17,9 +17,9 @@
         },
         "en-GB": {
           "summary": "This is an example skill to show how to use the Echo Buttons Skill API",
-            "examplePhrases": [
-              "Alexa, open colour changer",
-              "Alexa, launch colour changer"
+          "examplePhrases": [
+            "Alexa, open colour changer",
+            "Alexa, launch colour changer"
           ],
           "keywords": [
             "Echo Buttons",
@@ -43,10 +43,6 @@
     },
     "apis": {
       "custom": {
-        "endpoint": {
-          "sourceDir": "lambda/py",
-          "uri": "ask-custom-buttons-color-changer-python"
-        },
         "interfaces": [
           {
             "type": "GAME_ENGINE"
